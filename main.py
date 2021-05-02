@@ -2,8 +2,21 @@ from tkinter import *
 
 root = Tk()
 
-label = Label(root, text="hi").grid(row=0,column=0)
-label_2 = Label(root, text="hi ota").grid(row=1,column=0)
+def app():
+	button = Button(root, text="Click Me")
+	button.pack()
+
+def label():
+	label_1 = Label(root, text="hi")
+	label_2 = Label(root, text="hi ota")
+
+	label_1.pack()
+	label_2.pack()
+
+app()
+label()
+app()
+label()
 
 
 root.mainloop()
